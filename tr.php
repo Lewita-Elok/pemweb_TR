@@ -49,7 +49,6 @@
       <!-- kategori -->
     <section id="categories">
       <h2 class="text-center my-4">Kategori</h2>
-      <div class="category-container">
       <div class="category">
           <img src="images/bunga.jpg" alt="Kategori 1" />
           <p>Bouquet Bunga</p>
@@ -305,7 +304,7 @@
   <div class="container">
       <p>&copy; 2024 Your Company. All Rights Reserved.</p>
       <div class="social-media">
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/floslyy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
               <img src="images/—Pngtree—instagram logo icon_3588821.png" alt="Instagram">
           </a>
           <a href="https://www.google.com/maps" target="_blank">
@@ -323,7 +322,6 @@
       </div>
   </div>
 </footer>
-
 
   </body>
 </html>
