@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <h2>Log In</h2>
       <form method="POST" action="auth.php">
         <div class="mb-3">
-          <label for="loginName" class="form-label">Name</label>
+          <label for="loginName" class="form-label">Nama</label>
           <input type="text" id="loginName" class="form-control" name="name" placeholder="Enter your name" required />
         </div>
         <div class="mb-3">
@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <button type="submit" class="btn btn-primary" name="signIn">Log In</button>
         <div class="form-footer mt-3">
-          <span class="toggle-link" onclick="toggleForm()">I don’t have an account</span>
+          <span class="toggle-link" onclick="toggleForm()">Saya tidak memiliki akun.</span>
         </div>
       </form>
     </div>
@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             required />
         </div>
         <div class="mb-3">
-          <label for="signUpName" class="form-label">Name</label>
+          <label for="signUpName" class="form-label">Nama</label>
           <input type="text" id="signUpName" class="form-control" name="name" placeholder="Choose a name" required />
         </div>
         <div class="mb-3">
@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <button type="submit" class="btn btn-primary" name="signUp">Sign Up</button>
         <div class="form-footer mt-3">
-          <span class="toggle-link" onclick="toggleForm()">Already have an account? Log In</span>
+          <span class="toggle-link" onclick="toggleForm()">Sudah memiliki akun? Log In</span>
         </div>
       </form>
     </div>
