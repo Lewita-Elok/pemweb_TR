@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       if (password_verify($password, $row['password'])) {
         $_SESSION['name'] = $row['name'];
-        header("Location: tr.php");
+        header("Location: tr_admin.php");
         exit();
       } else {
         echo "Incorrect Password";
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
       $insertQuery = "INSERT INTO users (email, name, password) VALUES ('$email', '$name', '$hashedPassword')";
       if ($conn->query($insertQuery) === TRUE) {
-        header("Location: tr.php");
+        header("Location: tr_admin.php");
         exit();
       } else {
         echo "Error: " . $conn->error;
