@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (password_verify($password, $row['password'])) {
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['username'] = $row['username'];
-                header("Location: tr.php");
+                header("Location: tr_admin.php");
                 exit();
             } else {
                 $error = "Incorrect Password";
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $insertStmt->bind_param("sss", $email, $username, $hashedPassword);
 
             if ($insertStmt->execute()) {
-                header("Location: tr.php");
+                header("Location: tr_admin.php");
                 exit();
             } else {
                 $error = "Error: " . $conn->error;
