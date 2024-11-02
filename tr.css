@@ -265,40 +265,20 @@ section {
 }
 
 /* Kategori */
-.category-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+#categories {
+  padding: 3rem 0; /* Padding untuk section */
 }
 
 .category {
-  width: 250px; 
-  height: 250px;
-  border-radius: 50%; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0; 
-  margin: 30px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.2s; 
-  flex-direction: column;
-  border: none; /* Pastikan border di sini tidak ada */
-}
-
-
-.category:hover {
-  transform: scale(1.1);
+  margin-bottom: 2rem; /* Spasi antar kategori */
 }
 
 .category img {
-  width: 100%; /* Atur lebar menjadi 100% agar gambar memenuhi area */
-  height: 100%; /* Atur tinggi menjadi 100% agar gambar memenuhi area */
-  border-radius: 50%; /* Membuat gambar berbentuk bulat */
-  object-fit: cover; /* Memastikan gambar memenuhi area tanpa merusak proporsinya */
+  max-width: 100%; /* Membuat gambar responsif */
+  height: auto; /* Menjaga aspek rasio gambar */
+  border-radius: 10px; /* Menambahkan sudut yang melengkung pada gambar */
 }
-
+  
 
 /* Footer Section */
 #footer {

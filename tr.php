@@ -47,26 +47,38 @@
     </section>
 
       <!-- kategori -->
-    <section id="categories">
-      <h2 class="text-center my-4">Kategori</h2>
-      <div class="category">
-          <img src="images/bunga.jpg" alt="Kategori 1" />
+      <section id="categories">
+  <h2 class="text-center my-4">Kategori</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3 text-center">
+        <div class="category">
+          <img src="images/bunga.jpg" alt="Bouquet Bunga" class="img-fluid" />
           <p>Bouquet Bunga</p>
+        </div>
       </div>
-      <div class="category">
-          <img src="images/IMG_1859.jpg" alt="Kategori 2" />
+      <div class="col-md-3 text-center">
+        <div class="category">
+          <img src="images/IMG_1859.jpg" alt="Bouquet Uang" class="img-fluid" />
           <p>Bouquet Uang</p>
+        </div>
       </div>
-      <div class="category">
-          <img src="images/pipe.jpg" alt="Kategori 3" />
+      <div class="col-md-3 text-center">
+        <div class="category">
+          <img src="images/pipe.jpg" alt="Bouquet Pipe Cleaner" class="img-fluid" />
           <p>Bouquet Pipe Cleaner</p>
+        </div>
       </div>
-      <div class="category">
-          <img src="images/IMG_1005.jpg" alt="Kategori 4" />
+      <div class="col-md-3 text-center">
+        <div class="category">
+          <img src="images/IMG_1005.jpg" alt="Bouquet Snack" class="img-fluid" />
           <p>Bouquet Snack</p>
+        </div>
       </div>
-      </div>
-  </section>
+    </div>
+  </div>
+</section>
+
 
   <section id="products">
     <h2>Produk Buket</h2>
