@@ -323,12 +323,7 @@ section {
   height: 150px;
   border-radius: 50%; /* Gambar berbentuk bulat */
   object-fit: cover; /* Memastikan gambar memenuhi area */
-  transition: transform 0.3s ease; /* Animasi zoom saat hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan pada gambar */
-}
-
-#about-us img:hover {
-  transform: scale(1.1); /* Zoom in saat dihover */
 }
 
 /* Menambah jarak antar-ulasan */

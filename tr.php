@@ -31,7 +31,6 @@
                 <li class="nav-item"><a class="nav-link" href="#categories">Kategori</a></li>
                 <li class="nav-item"><a class="nav-link" href="#products">Bouquet</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">Ulasan</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Sosial Media</a></li>
               </ul>
             </div>
           </div>
@@ -47,7 +46,7 @@
     </section>
 
       <!-- kategori -->
-      <section id="categories">
+  <section id="categories">
   <h2 class="text-center my-4">Kategori</h2>
   <div class="container">
     <div class="row justify-content-center">
@@ -79,7 +78,6 @@
   </div>
 </section>
 
-
   <section id="products">
     <h2>Produk Buket</h2>
     <div class="row">
@@ -87,7 +85,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_7785.jpg" 
             class="card-img-top"
             alt="Buket 1"
           />
@@ -98,7 +96,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=1" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=1" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -106,18 +104,18 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_1207.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
           <div class="card-body">
-            <h5 class="card-title">Buket Mawar Merah</h5>
+            <h5 class="card-title">Buket Costume</h5>
             <p class="card-text">
               Buket mawar merah elegan cocok untuk momen spesial. Tersedia
               dalam berbagai ukuran.
             </p>
-            <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=2" class="btn btn-primary">Detail Produk</a>
+            <p class="price">Harga: Rp 180.000</p>
+            <a href="product-detail.php?id=2" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -125,18 +123,18 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_2398.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
           <div class="card-body">
-            <h5 class="card-title">Buket Mawar Merah</h5>
+            <h5 class="card-title">Buket Photo</h5>
             <p class="card-text">
               Buket mawar merah elegan cocok untuk momen spesial. Tersedia
               dalam berbagai ukuran.
             </p>
-            <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=3" class="btn btn-primary">Detail Produk</a>
+            <p class="price">Harga: Rp 50.000 </p>
+            <a href="product-detail.php?id=3" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -144,7 +142,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_2532.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
@@ -155,7 +153,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=4" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=4" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -163,7 +161,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_2537.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
@@ -174,7 +172,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=5" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=5" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -182,7 +180,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_3071.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
@@ -193,7 +191,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=6" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=6" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -201,7 +199,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_3075.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
@@ -212,7 +210,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=7" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=7" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -220,7 +218,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_3079.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
@@ -231,7 +229,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=8" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=8" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
@@ -239,7 +237,7 @@
       <div class="col-md-4">
         <div class="card">
           <img
-            src="images/IMG_7785.jpg"
+            src="images/IMG_3095.jpg"
             class="card-img-top"
             alt="Buket 1"
           />
@@ -250,7 +248,7 @@
               dalam berbagai ukuran.
             </p>
             <p class="price">Harga: Rp 450.000</p>
-            <a href="product-detail.html?id=9" class="btn btn-primary">Detail Produk</a>
+            <a href="product-detail.php?id=9" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
