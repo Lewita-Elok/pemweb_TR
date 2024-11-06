@@ -47,13 +47,14 @@ html {
 }
 
 /* Header Styling */
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f8f9fa;
   padding: 1rem 2rem;
   border-bottom: 3px solid #d7ccc8;
+  position: fixed;
 }
 
 header h1 {
@@ -266,48 +267,152 @@ section {
 
 /* Kategori */
 #categories {
-  padding: 3rem 0; /* Padding untuk section */
+  text-align: center;
+  padding: 20px;
+}
+
+#categories h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .category {
-  margin-bottom: 2rem; /* Spasi antar kategori */
+  margin-bottom: 20px;
 }
 
 .category img {
-  max-width: 100%; /* Membuat gambar responsif */
-  height: auto; /* Menjaga aspek rasio gambar */
-  border-radius: 10px; /* Menambahkan sudut yang melengkung pada gambar */
+  width: 150px;       /* Sesuaikan ukuran lingkaran */
+  height: 150px;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  object-fit: cover;  /* Menjaga proporsi gambar */
+  margin: 0 auto;
 }
-  
+
+.category p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+#categories .category img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Pastikan gambar berbentuk lingkaran */
+  object-fit: cover;  /* Menjaga proporsi gambar */
+  display: block;     /* Menghapus gaya lain yang bisa mengganggu */
+  margin: 0 auto;
+}
+
+
 
 /* Footer Section */
-#footer {
-  background-color: #343a40;
-  color: white;
-  padding: 30px 0; /* Tambah padding untuk footer yang lebih besar */
-}
-
-#footer p {
+/* Styling untuk body dengan background hijau */
+body {
+  background-color: #f4f4f4; /* Warna latar belakang tubuh tetap netral */
   margin: 0;
-  font-size: 16px; /* Ukuran font yang lebih besar untuk teks */
+  font-family: Arial, sans-serif; /* Menetapkan font standar */
 }
 
-.social-media {
-  margin-top: 20px; /* Jarak lebih besar antara teks dan ikon */
+/* Styling untuk header dan elemen header-title */
+header {
+  display: flex;
+  justify-content: flex-start; /* Menempatkan FLOSLYY di kiri */
+  align-items: center; /* Menyelaraskan secara vertikal */
+  padding: 10px 20px;
+  position: relative;
 }
 
-.social-media a {
-  margin: 0 15px; /* Jarak lebih besar antar ikon */
+.header-title {
+  font-size: 32px; /* Memperbesar ukuran font */
+  color: #333; /* Warna teks gelap */
+  margin: 0;
 }
 
-.social-media img {
-  width: 50px; /* Ukuran ikon media sosial yang lebih besar */
-  height: 50px; /* Ukuran ikon media sosial yang lebih besar */
-  transition: transform 0.3s ease; /* Animasi saat hover */
+/* Styling untuk footer */
+footer {
+  background-color: #627254; /* Warna hijau matcha yang lembut */
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  position: relative; /* Menetapkan posisi relatif agar footer-app-links bisa diposisikan secara absolute */
 }
 
-.social-media img:hover {
-  transform: scale(1.2); /* Zoom in lebih besar saat dihover */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 20px; /* Memperbesar ukuran font pada header di footer */
+  margin-top: 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px; /* Membuat jarak lebih besar antar elemen di dalam list */
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px; /* Memperbesar ukuran font untuk link */
+}
+
+/* Styling untuk footer-info agar sejajar kanan kiri */
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-info p {
+  margin: 0 5px;
+  color: #333;
+  font-size: 18px; /* Memperbesar ukuran font untuk footer-info */
+  width: 30%;
+}
+
+/* Styling untuk link WhatsApp */
+.contact-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px; /* Memperbesar ukuran font untuk WhatsApp link */
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: blue;
+}
+
+/* Styling untuk footer-app-links */
+.footer-app-links {
+  position: absolute; /* Memposisikan secara absolut di dalam footer */
+  top: 20px; /* Jarak dari atas footer */
+  right: 20px; /* Jarak dari kanan footer */
+  display: flex;
+  gap: 10px;
+}
+
+.footer-app-links a img {
+  width: 150px;
+}
+
+.social-icon {
+  width: 42px; /* Memperbesar ikon sosial media */
+  height: 42px; /* Memperbesar ikon sosial media */
+  margin-right: 10px;
+  display: flex;
 }
 
 

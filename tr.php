@@ -310,28 +310,50 @@
   </section>
 
 <!-- Footer Section -->
-<footer id="footer" class="text-center">
-  <div class="container">
-      <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-      <div class="social-media">
-          <a href="https://www.instagram.com/floslyy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-              <img src="images/—Pngtree—instagram logo icon_3588821.png" alt="Instagram">
-          </a>
-          <a href="https://www.google.com/maps" target="_blank">
-              <img src="images/gmaps.png" alt="Google Maps">
-          </a>
-          <a href="https://www.tiktok.com" target="_blank">
-              <img src="images/tiktok.png" alt="TikTok">
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-              <img src="images/facebook.png" alt="Facebook">
-          </a>
-          <a href="https://www.twitter.com" target="_blank">
-              <img src="images/twitter.png" alt="Twitter">
-          </a>
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <h2 class="header-title">FLOSLYY</h2>
+          <ul class="poto">
+              <li><a href="#">Follow Us</a></li>
+              <li>
+                  <a href="#"><img src="images/—Pngtree—instagram logo icon_3588821.png" alt="Instagram" class="social-icon"></a>
+              </li>
+              <li>
+                  <a href="#"><img src="images/tiktok.png" alt="TikTok" class="social-icon"></a>
+              </li>
+              <li>
+                  <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+              </li>
+          </ul>
       </div>
-  </div>
-</footer>
+      <div class="footer-column">
+          <h3>Layanan</h3>
+          <ul>
+              <li><a href="#">Pesan Dari rumah</a></li>
+              <li><a href="#">Pesan Dari Toko</a></li>
+              <p>Konsultasi</p>
+              <p>Bunga Segar Musiman</p>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Contact Person </h3>
+          <a href="https://wa.me/6281234567890" class="contact-link" target="_blank">
+              Nomor Telfon
+          </a>       
+          <p>Alamat Email</p>
+      </div>
+      <div class="footer-app-links">
+          <a href="#"><img src="images/google play.png" alt="Get it on Google Play"></a>
+          <a href="#"><img src="images/app store.png" alt="Download on the App Store"></a>
+      </div>
+    </div>
+    <div class="footer-info">
+      <p>Company Profile</p>
+      <p>Privacy Policy</p>
+      <p>Terms of Service</p>
+    </div>
+  </footer>
 
   </body>
 </html>
