@@ -343,10 +343,6 @@
           </a>       
           <p>Alamat Email</p>
       </div>
-      <div class="footer-app-links">
-          <a href="#"><img src="images/google play.png" alt="Get it on Google Play"></a>
-          <a href="#"><img src="images/app store.png" alt="Download on the App Store"></a>
-      </div>
     </div>
     <div class="footer-info">
       <p>Company Profile</p>

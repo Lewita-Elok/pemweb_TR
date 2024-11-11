@@ -395,19 +395,6 @@ footer {
   color: blue;
 }
 
-/* Styling untuk footer-app-links */
-.footer-app-links {
-  position: absolute; /* Memposisikan secara absolut di dalam footer */
-  top: 20px; /* Jarak dari atas footer */
-  right: 20px; /* Jarak dari kanan footer */
-  display: flex;
-  gap: 10px;
-}
-
-.footer-app-links a img {
-  width: 150px;
-}
-
 .social-icon {
   width: 42px; /* Memperbesar ikon sosial media */
   height: 42px; /* Memperbesar ikon sosial media */
