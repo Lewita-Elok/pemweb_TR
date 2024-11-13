@@ -9,7 +9,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
   color: #333;
 }
 
@@ -86,7 +86,7 @@ nav ul {
   font-size: 16px;
   padding: 0.5rem 1rem;
   font-weight: 200;
-  color: #5d4037; 
+  color: #5d4037;
   transition: color 0.3s ease-in-out;
 }
 
@@ -281,10 +281,10 @@ section {
 }
 
 .category img {
-  width: 150px;       /* Sesuaikan ukuran lingkaran */
+  width: 150px; /* Sesuaikan ukuran lingkaran */
   height: 150px;
   border-radius: 50%; /* Membuat gambar menjadi lingkaran */
-  object-fit: cover;  /* Menjaga proporsi gambar */
+  object-fit: cover; /* Menjaga proporsi gambar */
   margin: 0 auto;
 }
 
@@ -298,12 +298,10 @@ section {
   width: 150px;
   height: 150px;
   border-radius: 50%; /* Pastikan gambar berbentuk lingkaran */
-  object-fit: cover;  /* Menjaga proporsi gambar */
-  display: block;     /* Menghapus gaya lain yang bisa mengganggu */
+  object-fit: cover; /* Menjaga proporsi gambar */
+  display: block; /* Menghapus gaya lain yang bisa mengganggu */
   margin: 0 auto;
 }
-
-
 
 /* Footer Section */
 /* Styling untuk body dengan background hijau */
@@ -330,7 +328,7 @@ header {
 
 /* Styling untuk footer */
 footer {
-  background-color: #627254; /* Warna hijau matcha yang lembut */
+  background-color: #f7a9a8; /* Warna hijau matcha yang lembut */
   padding: 20px;
   border-top: 1px solid #e0e0e0;
   position: relative; /* Menetapkan posisi relatif agar footer-app-links bisa diposisikan secara absolute */
@@ -402,7 +400,6 @@ footer {
   display: flex;
 }
 
-
 /* Container utama untuk ulasan */
 #about-us {
   background-color: #f9f9f9;
@@ -456,7 +453,6 @@ footer {
 .review-form button:hover {
   background-color: #0056b3;
 }
-
 
 /* Style Form Ulasan */
 .review-form {
