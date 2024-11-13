@@ -74,8 +74,8 @@
             </div>
 
             <div class="text-center mt-4">
-                <a href="checkout.html" class="btn btn-primary">Lanjutkan ke Pembayaran</a>
-                <a href="index.html" class="btn btn-secondary">Lanjut Belanja</a>
+                <a href="checkout.php" class="btn btn-primary">Lanjutkan ke Pembayaran</a>
+                <a href="tr.php" class="btn btn-secondary">Lanjut Belanja</a>
             </div>
         </div>
     </section>
