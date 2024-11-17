@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
   } elseif (isset($_POST['signUp'])) {
     $email = $_POST['email'];
-    $name = $_POST['name'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result->num_rows > 0) {
       echo "Email or Name Already Exists!";
     } else {
-      $insertQuery = "INSERT INTO users (email, name, password) VALUES ('$email', '$name', '$hashedPassword')";
+      $insertQuery = "INSERT INTO admins (email, username, password) VALUES ('$email', '$username', '$hashedPassword')";
       if ($conn->query($insertQuery) === TRUE) {
         header("Location: tr_admin.php");
         exit();
