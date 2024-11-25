@@ -94,3 +94,47 @@ $listUlasan = $resUlasan->fetch_all(MYSQLI_ASSOC);
         </div>
     <?php endforeach; ?>
 </section>
+
+<!-- Ulasan -->
+<section class="mt-12 px-4 md:px-48">
+  <h3 class="text-center text-2xl font-medium">Ulasan Pelanggan</h3>
+  <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-x-8">
+    <div class="space-y-8 max-h-96 overflow-y-auto hide-scrollbar">
+      <?php foreach ($listUlasan as $ulasan) : ?>
+        <div class="flex items-center gap-x-5 border py-5 px-8 rounded-lg">
+          <img class="w-20 rounded-full" src="images/ulasan.jpeg" alt="">
+          <div>
+            <p>"<?= $ulasan['Ulasan'] ?>"</p>
+            <p class="text-slate-500">- <?= $ulasan['namaCst'] ?></p>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+    <div class="mt-10 lg:mt-0">
+      <form action="">
+        <h3 class="text-xl font-medium">Berikan Ulasan Anda</h3>
+        <div class="flex flex-col gap-y-5 mt-5">
+          <div class="flex flex-col gap-y-2">
+            <label for="nama">Nama</label>
+            <input class="border py-2 px-4 rounded-lg" type="text" name="nama" id="nama" placeholder="Nama anda">
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <label for="email">Email</label>
+            <input class="border py-2 px-4 rounded-lg" type="email" name="email" id="email"
+              placeholder="example@gmail.com">
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <label for="ulasan">Ulasan</label>
+            <textarea class="border py-2 px-4 rounded-lg" rows="4" name="ulasan" id="ulasan"></textarea>
+          </div>
+        </div>
+        <button
+          class="mt-5 rounded-lg border border-red-600 px-10 py-2 bg-red-600 shadow-xl hover:bg-red-700 hover:border-red-700 transition-all text-white float-right"
+          type="submit">Kirim</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<?php include './views/components/footer.php' ?>
