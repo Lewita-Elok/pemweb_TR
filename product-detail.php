@@ -22,6 +22,26 @@
                 <h3 id="productName" class="card-title"></h3>
                 <p id="productDescription" class="card-text"></p>
                 <p class="price"><strong>Harga: </strong><span id="productPrice"></span></p>
+
+                <form action="cart.php" method="POST">
+                    <!-- Input jumlah produk -->
+                    <div class="input-group mb-3">
+                    <input
+                        type="number"
+                        name="quantity"
+                        class="form-control"
+                        value="1"
+                        min="1"
+                        max="10"
+                        required
+                        />
+                    </div>
+                    <input type="hidden" id="hiddenProductName" name="product_name">
+                            <input type="hidden" id="hiddenProductPrice" name="product_price">
+                            <input type="hidden" id="hiddenProductImage" name="product_image">
+
+                            <button type="submit" class="btn btn-primary">Tambah ke Keranjang</button>
+                </form>
                 <a href="tr.php" class="btn btn-secondary">Kembali</a>
             </div>
         </div>
@@ -103,6 +123,10 @@
             document.getElementById("productDescription").textContent = product.description;
             document.getElementById("productPrice").textContent = product.price;
             document.getElementById("productImage").src = product.image;
+
+            document.getElementById("hiddenProductName").value = product.name;
+            document.getElementById("hiddenProductPrice").value = product.price;
+            document.getElementById("hiddenProductImage").value = product.image;
         } else {
             document.body.innerHTML = "<p>Produk tidak ditemukan</p>";
         }
