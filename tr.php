@@ -31,6 +31,7 @@
                 <li class="nav-item"><a class="nav-link" href="#categories">Kategori</a></li>
                 <li class="nav-item"><a class="nav-link" href="#products">Bouquet</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">Ulasan</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.php">Beli Sekarang</a></li>
               </ul>
             </div>
           </div>
