@@ -37,9 +37,8 @@ if (isset($_POST['logout'])) {
     </div>
     <ul class="flex flex-wrap items-center gap-x-5 text-lg">
       <li><a class="hover:text-gray-600 transition-colors" href="#">Beranda</a></li>
-      <li><a class="hover:text-gray-600 transition-colors" href="#kategori">Kategori</a></li>
-      <li><a class="hover:text-gray-600 transition-colors" href="#boquet">Bouquet</a></li>
-      <li><a class="hover:text-gray-600 transition-colors" href="#ulasan">Ulasan</a></li>
+      <li><a class="hover:text-gray-600 transition-colors" href="#kategori">kategori</a></li>
+      <li><a class="hover:text-gray-600 transition-colors" href="#ulasan">ulasan</a></li>
       <li><a class="hover:text-gray-600 transition-colors" href="">Beli Sekarang</a></li>
     </ul>
     <div class="flex gap-x-5">
