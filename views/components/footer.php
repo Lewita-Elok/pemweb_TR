@@ -30,9 +30,8 @@
       <ul class="flex flex-col gap-y-3">
         <li><a class="hover:text-gray-600 transition-colors" href="#hero">Beranda</a></li>
         <li><a class="hover:text-gray-600 transition-colors" href="#kategori">Kategori</a></li>
-        <li><a class="hover:text-gray-600 transition-colors" href="#">Bouquet</a></li>
-        <li><a class="hover:text-gray-600 transition-colors" href="#">Ulasan</a></li>
-        <li><a class="hover:text-gray-600 transition-colors" href="#">Beli Sekarang</a></li>
+        <li><a class="hover:text-gray-600 transition-colors" href="#ulasan">Ulasan</a></li>
+        <li><a class="hover:text-gray-600 transition-colors" href="#kategori">Beli Sekarang</a></li>
       </ul>
     </div>
   </div>
@@ -40,7 +39,7 @@
 
 <script>
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
       const targetId = this.getAttribute('href');

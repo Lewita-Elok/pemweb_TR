@@ -4,13 +4,15 @@ session_start();
 include '../logic/auth.php';
 
 if (isset($_POST['login'])) {
-  $email = $_POST['email'];
-  $password = $_POST['password'];
-  login($email, $password);
+  if (isset($_POST['Email']) && isset($_POST['Password'])) {
+    $email = $_POST['Email'];
+    $password = $_POST['Password'];
+    login($email, $password);
+  } else {
+    echo "Pastikan email dan password benar.";
+  }
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +43,8 @@ if (isset($_POST['login'])) {
       </div>
       <button type="submit" name="login"
         class="mt-8 rounded-lg border border-red-600 px-10 py-2 bg-red-600 hover:bg-red-700 hover:border-red-700 transition-all text-white w-full">Login</button>
-      <p class="mt-5 text-center">Didn't have account? <a class="text-blue-500" href="./register-page.php">Register</a></p>
+      <p class="mt-5 text-center">Didn't have account? <a class="text-blue-500" href="./register-page.php">Register</a>
+      </p>
     </form>
   </section>
 </body>
