@@ -4,14 +4,11 @@ session_start();
 include '../logic/auth.php';
 
 if (isset($_POST['login'])) {
-  if (isset($_POST['Email']) && isset($_POST['Password'])) {
-    $email = $_POST['Email'];
-    $password = $_POST['Password'];
-    login($email, $password);
-  } else {
-    echo "Pastikan email dan password benar.";
-  }
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+  login($email, $password);
 }
+
 ?>
 
 <!DOCTYPE html>

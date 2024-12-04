@@ -117,7 +117,8 @@ $listCart = $resCart->fetch_all(MYSQLI_ASSOC);
       <tbody class="text-gray-600 text-sm font-light">
         <?php foreach ($listCart as $item): ?>
           <tr class="border-b border-gray-200 hover:bg-gray-100">
-            <td class="py-3 px-6 text-left whitespace-nowrap"><img class="w-40 h-40 object-cover" src="../images/<?= $item['gambar'] ?>" alt=""></td>
+            <td class="py-3 px-6 text-left whitespace-nowrap"><img class="w-40 h-40 object-cover"
+                src="../images/<?= $item['gambar'] ?>" alt=""></td>
             <td class="py-3 px-6 text-left whitespace-nowrap"><?= htmlspecialchars($item['NamaProduk']) ?></td>
             <td class="py-3 px-6 text-left">Rp. <?= number_format($item['Harga'], 0, ',', '.') ?></td>
             <td class="py-3 px-6 text-center"><?= htmlspecialchars($item['jumlah']) ?></td>
@@ -135,17 +136,26 @@ $listCart = $resCart->fetch_all(MYSQLI_ASSOC);
     </table>
   </div>
   <h2 class="text-xl font-semibold mt-4">Total: Rp. <?= number_format(array_sum(array_map(function ($item) {
-                                                      return $item['Harga'] * $item['jumlah'];
-                                                    }, $listCart)), 0, ',', '.') ?></h2>
+    return $item['Harga'] * $item['jumlah'];
+  }, $listCart)), 0, ',', '.') ?></h2>
   <form method="GET" action="cart-page.php" class="mt-4">
     <input type="hidden" name="action" value="purchase">
     <label for="payment" class="block text-sm font-medium text-gray-700">Masukkan jumlah uang:</label>
-    <input type="number" name="payment" id="payment" min="0" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-    <button type="submit" class="mt-4 w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Beli Sekarang</button>
+    <input type="number" name="payment" id="payment" min="0" required
+      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    <button type="submit"
+      class="mt-4 w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Beli
+      Sekarang</button>
   </form>
-  <a href="../index.php" class="mt-6 px-4 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 block">
-  Kembali ke Beranda
-</a>
+  <a href="../index.php"
+    class="mt-6 px-4 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 absolute top-6 left-6 flex items-center gap-x-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5" />
+      <path d="M12 19l-7-7 7-7" />
+    </svg>
+    <span class="sr-only">Kembali ke Beranda</span>
+  </a>
 </body>
 
 </html>

@@ -31,7 +31,7 @@
         <li><a class="hover:text-gray-600 transition-colors" href="#hero">Beranda</a></li>
         <li><a class="hover:text-gray-600 transition-colors" href="#kategori">Kategori</a></li>
         <li><a class="hover:text-gray-600 transition-colors" href="#ulasan">Ulasan</a></li>
-        <li><a class="hover:text-gray-600 transition-colors" href="#kategori">Beli Sekarang</a></li>
+        <li><a class="hover:text-gray-600 transition-colors" href="#boquet">Beli Sekarang</a></li>
       </ul>
     </div>
   </div>
