@@ -143,6 +143,9 @@ $listCart = $resCart->fetch_all(MYSQLI_ASSOC);
     <input type="number" name="payment" id="payment" min="0" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
     <button type="submit" class="mt-4 w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Beli Sekarang</button>
   </form>
+  <a href="../index.php" class="mt-6 px-4 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 block">
+  Kembali ke Beranda
+</a>
 </body>
 
 </html>
