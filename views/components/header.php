@@ -31,7 +31,6 @@ if (isset($_POST['logout'])) {
     background-color: rgba(255, 255, 255, 0.8);
     transition: background-color 0.3s ease;
     backdrop-filter: blur(5px);
-    /* Opsional, untuk efek blur */
   }
 
   .header-solid {
