@@ -1,14 +1,14 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+}
 
 include '../logic/auth.php';
 
-$nama = $_POST['nama'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-
-
 if (isset($_POST['register'])) {
+  $nama = $_POST['nama'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
   register($nama, $email, $password);
 }
 

@@ -1,8 +1,8 @@
 <?php
-// Pastikan hanya memulai sesi jika belum aktif
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+  session_start();
 }
+
 include 'conn.php';
 
 function login($email, $password)
