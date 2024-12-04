@@ -52,13 +52,13 @@ if (isset($_POST['btn-ulasan'])) {
 <section id="kategori" class="mt-12 px-4 md:px-16">
   <h3 class="text-center text-2xl font-medium">Kategori</h3>
   <div class="flex flex-wrap justify-center gap-x-4 md:gap-x-10 mt-8 md:mt-12">
-    <button class="border max-w-[200px] rounded-full">
+    <button class="border max-w-[200px] rounded-full cursor-default">
       <div class="flex items-center justify-center gap-x-4 py-2 px-3 w-[80px]">
         <p>All</p>
       </div>
     </button>
     <?php foreach ($listKategori as $kategori): ?>
-      <button class="border max-w-[250px] rounded-full">
+      <button class="border max-w-[250px] rounded-full cursor-default">
         <div class="flex items-center gap-x-4 py-2 px-3">
           <img class="w-10 h-10 object-cover rounded-full" src="images/<?= $kategori['gambar'] ?>" alt="">
           <p><?= $kategori['kategori'] ?></p>
